@@ -1,0 +1,15 @@
+header {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+
+  background: url("../images/background.jpg") no-repeat center/cover;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: -50px;
+  img {
+    width: 700px;
+  }
+}
