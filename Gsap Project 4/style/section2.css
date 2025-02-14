@@ -1,0 +1,10 @@
+.section2{
+    width: 100vw;
+
+    h1{
+        font-size: 50vw;
+        font-weight: 200;
+        text-wrap: nowrap;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}

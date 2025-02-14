@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap project 5 - Eterna Moda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Eterna Moda</h1>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Shop</li>
+            <li>New Arivals</li>
+            <li>Blogs</li>
+        </ul>
+
+        <button>
+            Contact US
+        </button>
+    </nav>
+
+    <header>
+        <div class="slide1">
+            <span id="s1-left" class="left-button">&lt;</span>
+            <span id="s1-right" class="right-button">&gt;</span>
+            <span class="left"></span>
+            <img src="images/image (1).png" alt="">
+            <h1><span>Eterna</span> Moda</h1>
+            <span class="right"></span>
+        </div>
+        <div class="slide2">
+            <span id="s2-left" class="left-button">&lt;</span>
+            <span id="s2-right" class="right-button">&gt;</span>
+            <span class="left"></span>
+            <img src="images/image (2).png" alt="">
+            <h1><span>Eterna</span> Moda</h1>
+            <span class="right"></span>
+        </div>
+        <div class="slide3">
+            <span id="s3-left" class="left-button">&lt;</span>
+            <span id="s3-right" class="right-button">&gt;</span>
+            <span class="left"></span>
+            <img src="images/image (3).png" alt="">
+            <h1><span>Eterna</span> Moda</h1>
+            <span class="right"></span>
+        </div>
+    </header>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'
+        integrity='sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=='
+        crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+    <script>
+
+        document.getElementById("s1-left").addEventListener("click", () => {
+            gsap.to("header", {
+                duration: 0.5,
+                transform: "translateX(-200%)"
+            })
+        })
+        document.getElementById("s1-right").addEventListener("click", () => {
+            gsap.to("header", {
+                duration: 0.5,
+                transform: "translateX(-100%)"
+            })
+        })
+        document.getElementById("s2-left").addEventListener("click", () => {
+            gsap.to("header", {
+                duration: 0.5,
+                transform: "translateX(00%)"
+            })
+        })
+        document.getElementById("s2-right").addEventListener("click", () => {
+            gsap.to("header", {
+                duration: 0.5,
+                transform: "translateX(-200%)"
+            })
+        })
+        document.getElementById("s3-left").addEventListener("click", () => {
+            gsap.to("header", {
+                duration: 0.5,
+                transform: "translateX(-100%)"
+            })
+        })
+        document.getElementById("s3-right").addEventListener("click", () => {
+            gsap.to("header", {
+                duration: 0.5,
+                transform: "translateX(00%)"
+            })
+        })
+
+
+        gsap.from("header img", {
+            y:100,
+            opacity: 0,
+            duration:1,
+        })
+        gsap.from("header h1", {
+            y:-100,
+            opacity: 0,
+            duration:1,
+        })
+        gsap.from("header .right",{
+            background:"white"
+        })
+    </script>
+</body>
+
+</html>
